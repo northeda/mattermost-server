@@ -48,12 +48,12 @@ func (th *ServerTestHelper) TearDownServerTest() {
 	jobs.DEFAULT_WATCHER_POLLING_INTERVAL = th.originalInterval
 }
 
-func TestRunServerSuccess(t *testing.T) {
+func TestRunServerSiteURL(t *testing.T) {
 	th := SetupServerTest()
 	defer th.TearDownServerTest()
 
 	err := runServer(th.configPath, th.disableConfigWatch, th.interruptChan)
-	require.NoError(t, err)
+	require.Error(t, err)
 }
 
 func TestRunServerInvalidConfigFile(t *testing.T) {
