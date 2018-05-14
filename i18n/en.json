@@ -5035,6 +5035,10 @@
     "translation": "AD/LDAP field \"ID Attribute\" is required."
   },
   {
+    "id": "model.config.is_valid.ldap_login_id",
+    "translation": "AD/LDAP field \"Login ID Attribute\" is required."
+  },
+  {
     "id": "model.config.is_valid.ldap_lastname",
     "translation": "AD/LDAP field \"Last Name Attribute\" is required."
   },
@@ -5937,10 +5941,6 @@
   {
     "id": "store.sql_channel.delete.channel.app_error",
     "translation": "We couldn't delete the channel"
-  },
-  {
-    "id": "store.sql_channel.extra_updated.app_error",
-    "translation": "Problem updating members last updated time"
   },
   {
     "id": "store.sql_channel.get.existing.app_error",
